@@ -1,9 +1,9 @@
 def find_peaks(array):
-    peaks = []
+    peaks = []                                                    #array where we will store the index of the peak values
     len_array = len(array)
-    for i in range(1, len_array - 1):
+    for i in range(1, len_array - 1):                             #exlude first and last values of the array
         if array[i] > array[i - 1] and array[i] > array[i +1]:
-            peaks.append(i)
+            peaks.append(i)                                        #append index of element into the peak array if it is a peak
     
     return peaks
 
